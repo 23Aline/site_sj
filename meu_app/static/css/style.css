@@ -13,24 +13,54 @@ body{
 
 /* BARRA HOME */
 .navbar {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    background-color: #000000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
     color: white;
-    padding: 15px 15px; 
-    margin: 0; 
-    width: 100%; 
-    position:absolute; 
-    top: 0; 
-    left: 0; 
+    padding: 15px 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .navbar-title {
-    flex: 1; 
-    text-align: center; 
-    font-size: 35px;
-    font-weight: bold; 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    color: #C96868;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a.nav-button {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #7EACB5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.navbar a.nav-button:hover {
+    background-color: #C96868;
+    color: white;
 }
 
 .navbar a {
@@ -77,6 +107,20 @@ h2{
     font-size: 0.75cm;
 }
 
+p {
+    text-align: center;
+    font-size: 20px; 
+    line-height: 1.6; 
+    color: #4e4747; 
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #7EACB5;
+    margin: 15px;
+}
+
 .image-content{
     align-items: center;
     justify-content: center;
@@ -119,7 +163,12 @@ article {
     box-shadow: 0 4px 8px rgba(90, 12, 12, 0.1);
 }
 
+article p {
+    text-align: left;
+}
+
 .img-padronizada {
+    margin-top: 10px;
     width: 180px; 
     height: 140px; 
     object-fit: cover;
@@ -128,44 +177,8 @@ article {
     gap: 20px;
 }
 
-/* QUADRO QUE CONTÉM OS BOTÕES */
-.button-wrapper {
-    border-radius: 10px; 
-    padding: 20px 40px; 
-    margin: 40px auto; 
-    background-color: #000000; 
-    max-width: 1000px; 
-    display: flex;
-    justify-content: center; 
-    gap: 40px;
-}
-
-h3 {
-    text-align: center;
-    color: #000000;
-    font-size: 0.60cm;
-    margin: 20px;
-}
-
-.button-wrapper button {
-    background-color: #7EACB5; 
-    color: #000000;
-    border: none; 
-    padding: 15px 30px; 
-    border-radius: 8px; 
-    font-size: 18px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-}
-
-.button-wrapper button:hover {
-    background-color: #C96868;
-    color: white;
-}
-
 /*RODAPE*/
-footer {
+footer p {
     text-align: center; 
     padding: 20px; 
     color: #000000; 

@@ -14,8 +14,13 @@
     <nav class="navbar">
         <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
         <div class="navbar-title">São Joaquim - SC</div>
+            <div class="button-wrapper">
+                <a href="{% url 'vinicolas' %}" class="nav-button">Vinícolas</a>
+                <a href="{% url 'destaques' %}" class="nav-button">Destaques</a>
+                <a href="{% url 'clima' %}" class="nav-button">Clima</a>
+                <a href="{% url 'video' %}" class="nav-button">Vídeo</a>
+            </div>
     </nav>
-
     <main>
         <h2>Conheça mais sobre a capital nacional da maçã!</h2>
         <!--Historia da cidade-->
@@ -50,27 +55,9 @@
                 preservam parte desse passado.</h4>
         </section>
 
-        <!-- Menu de Navegação com Botões -->
-        <h3>Explore mais sobre São Joaquim:</h3>
-        <section class="button-wrapper">
-            
-            <form action="{% url 'vinicolas' %}">
-                <button type="submit">Vinícolas</button>
-            </form>
-            <form action="{% url 'destaques' %}">
-                <button type="submit">Destaques</button>
-            </form>
-            <form action="{% url 'clima' %}">
-                <button type="submit">Clima</button>
-            </form>
-            <form action="{% url 'video' %}">
-                <button type="submit">Video</button>
-            </form>
-        </section>     
-                 
         <footer>
-            <p>&copy; Aline 2025 - Todos os direitos reservados.</p> 
-        </footer>        
+            <p>&copy; Aline 2025 - Todos os direitos reservados.</p>
+        </footer>
     </main>
 </body>
 

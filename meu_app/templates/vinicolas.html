@@ -11,11 +11,16 @@
 </head>
 
 <body>
-
     <main>
         <nav class="navbar">
             <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
             <div class="navbar-title">São Joaquim - SC</div>
+                <div class="button-wrapper">
+                    <a href="{% url 'vinicolas' %}" class="nav-button">Vinícolas</a>
+                    <a href="{% url 'destaques' %}" class="nav-button">Destaques</a>
+                    <a href="{% url 'clima' %}" class="nav-button">Clima</a>
+                    <a href="{% url 'video' %}" class="nav-button">Vídeo</a>
+                </div>
         </nav>
 
         <div class="articles-container">
