@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:#f7f1e3;
+    padding: 100px 20px 20px 20px;
+}
+
+/* BARRA HOME */
+.navbar {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #000000; 
+    color: white;
+    padding: 15px 15px; 
+    margin: 0; 
+    width: 100%; 
+    position:absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+.navbar-title {
+    flex: 1; 
+    text-align: center; 
+    font-size: 35px;
+    font-weight: bold; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold; 
+    font-size: 30px; 
+    display: inline-flex;
+    align-items: center; 
+}
+
+.navbar a i {
+    font-size: 24px;
+    margin-right: 8px; 
+    line-height: 1; 
+    color: white;
+}
+
+/* ESTILO DA SEÇÃO HISTORICA */
+.historical-section h4 {
+    text-align: center;
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #4e4747; 
+}
+
+.historical-section h2 {
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+    font-size: 0.75cm;
+}
+
+.historical-section img {
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+/*ESTILO */
+h2{
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+    font-size: 0.75cm;
+}
+
+.image-content{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-bottom: 20px;
+    margin: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-container img {
+    width: 100%; 
+    max-width: 200px; 
+}
+
+/*VIDEO E FOTO HOME*/
+.centered-content{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;    
+    margin: 20px;
+    gap: 10px;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/*VINICOLAS*/
+article {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+    margin-top: 20px; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(90, 12, 12, 0.1);
+}
+
+.img-padronizada {
+    width: 180px; 
+    height: 140px; 
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex; 
+    gap: 20px;
+}
+
+/* QUADRO QUE CONTÉM OS BOTÕES */
+.button-wrapper {
+    border-radius: 10px; 
+    padding: 20px 40px; 
+    margin: 40px auto; 
+    background-color: #000000; 
+    max-width: 1000px; 
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+}
+
+h3 {
+    text-align: center;
+    color: #000000;
+    font-size: 0.60cm;
+    margin: 20px;
+}
+
+.button-wrapper button {
+    background-color: #7EACB5; 
+    color: #000000;
+    border: none; 
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.button-wrapper button:hover {
+    background-color: #C96868;
+    color: white;
+}
+
+/*RODAPE*/
+footer {
+    text-align: center; 
+    padding: 20px; 
+    color: #000000; 
+    font-size: 16px; 
+    margin-top: 40px; 
+}

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>São Joaquim - SC</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
+        <div class="navbar-title">São Joaquim - SC</div>
+    </nav>
+
+    <main>
+        <h2>Conheça mais sobre a capital nacional da maçã!</h2>
+        <!--Historia da cidade-->
+        <section class="historical-section">
+            <h4>Historicamente conhecida como uma das cidades mais frias do Brasil, São Joaquim está situada
+                na Serra Catarinense. Fundada oficialmente em 1887, sua colonização começou ainda no século
+                XIX, com a passagem de tropeiros pela região. A economia local sempre esteve ligada à agropecuária,
+                mas ganhou grande destaque com a produção de maçãs, tornando-se a Capital Nacional da Maçã.
+                Além disso, São Joaquim atrai turistas pelo inverno rigoroso, com possibilidade de neve,
+                e pelas renomadas vinícolas da região.</h4>
+            <div class="centered-content">
+                <img src="https://www.google.com/maps/vt/data=h3911kIcQwkCn2dm74H4s6Ow-_9AezOC16QMUxevdNUhC7aMiCt62fpAX9MO28tz_dvl9gASv29CbEKiDX2U2uKX5H0YElvqwD7692MHUU8zUI-m61H8IWMPJC_OGhMBokFROpYOTqlHwKl0ZxmfGf7sDQzk_Yc9Xh0XI0prQ3uc5075vW6R6VFzg8P0KaH566_pXrAbs7ZJTH0hLRPkFxQ"
+                    alt="Mapa da cidade de São Joaquim" width="500" height="300">
+            </div>
+
+            <h2>Origens e Colonização</h2>
+            <h4>A ocupação da região começou no século XVIII, quando tropeiros vindos do Rio Grande do Sul
+                passaram a utilizar a área como ponto de parada. A geografia montanhosa e o clima frio tornavam
+                o local ideal para o descanso do gado e para o abastecimento dos viajantes.
+                Por volta de 1770, os primeiros colonos começaram a se estabelecer, principalmente
+                portugueses e descendentes de açorianos. A criação de gado e a agricultura passaram a
+                ser as principais atividades econômicas da região. A cidade recebeu o nome de São Joaquim
+                em homenagem ao santo de devoção dos primeiros colonos católicos que chegaram
+                à região. A igreja teve um papel fundamental no desenvolvimento da cidade, ajudando
+                a organizar a comunidade e promover a construção de infraestrutura básica.</h4>
+            <h4>Durante os séculos XVIII e XIX, São Joaquim era uma rota importante para os tropeiros,
+                que transportavam gado e mercadorias entre os estados do Sul e Sudeste do Brasil. O tropeirismo
+                foi responsável por impulsionar o crescimento da cidade, trazendo desenvolvimento comercial e
+                cultural. Com o tempo, São Joaquim se tornou um ponto de parada essencial para os viajantes que seguiam
+                pelas serras catarinenses. Os tropeiros deixaram um legado importante na cultura local, refletido
+                na culinária, na música e nos costumes da população. As festas e celebrações típicas da cidade ainda
+                preservam parte desse passado.</h4>
+        </section>
+
+        <!-- Menu de Navegação com Botões -->
+        <h3>Explore mais sobre São Joaquim:</h3>
+        <section class="button-wrapper">
+            
+            <form action="{% url 'vinicolas' %}">
+                <button type="submit">Vinícolas</button>
+            </form>
+            <form action="{% url 'destaques' %}">
+                <button type="submit">Destaques</button>
+            </form>
+            <form action="{% url 'clima' %}">
+                <button type="submit">Clima</button>
+            </form>
+            <form action="{% url 'video' %}">
+                <button type="submit">Video</button>
+            </form>
+        </section>     
+                 
+        <footer>
+            <p>&copy; Aline 2025 - Todos os direitos reservados.</p> 
+        </footer>        
+    </main>
+</body>
+
+</html>
