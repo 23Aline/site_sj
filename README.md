@@ -1,6 +1,47 @@
-![Captura de tela 2025-04-24 175815](https://github.com/user-attachments/assets/ea528c1e-3a12-4f0f-8fa1-e7ea5c183631)
-![Captura de tela 2025-04-24 180012](https://github.com/user-attachments/assets/4263ca4d-ace1-4c5d-aefa-69102509db69)
-![Captura de tela 2025-04-24 180038](https://github.com/user-attachments/assets/8e65485f-4a0e-4502-afb6-01cb4171b65c)
-![Captura de tela 2025-04-24 180106](https://github.com/user-attachments/assets/4ec9e634-bf88-4b05-80a7-55deeaa429d7)
-![Captura de tela 2025-04-24 180210](https://github.com/user-attachments/assets/8ee1fe73-b5d4-4de3-8afa-fe31b82a575e)
+# Site - São Joaquim
 
+## Visão Geral
+Este projeto é um site desenvolvido com Django e Python para apresentar a cidade de São Joaquim, em Santa Catarina, destacando seus pontos turísticos, história e eventos. O objetivo é fornecer aos moradores e visitantes uma experiência informativa e visualmente agradável sobre tudo o que a cidade tem a oferecer.
+
+---
+
+## Tecnologias Utilizadas
+Django (Python) — Backend e gerenciamento de conteúdo de forma mais organizada
+
+HTML — Estrutura semântica das páginas
+
+CSS — Estilização personalizada
+
+JavaScript — Interatividade entre as páginas
+
+---
+
+## Estrutura de Páginas
+Página Inicial — História da cidade, origens e colonização
+
+Destaques — Principais destaques da cidade, como pontos turísticos, vinículas e informações sobre a festa Nacional da Maçã
+
+Clima — História sobre as nevascas que já ocorreram na cidade
+
+Vinícolas — Informações e localização de todas as vinícolas da cidade
+
+---
+
+## Como Executar 
+1 Clone o repositório
+
+-> git clone https://github.com/23Aline/site_sj.git
+
+-> cd site_sj
+
+2 Instale as dependências
+
+-> pip install django
+
+3 Rode as migrações e o servidor
+
+-> python manage.py migrate
+
+-> python manage.py runserver
+
+4 Acesse o link gerado
